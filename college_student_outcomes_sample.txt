@@ -1,0 +1,43 @@
+CREATE TABLE college_student_outcomes_sample(
+student_id VARCHAR(20),
+course VARCHAR(100),
+mode VARCHAR(20),
+campus VARCHAR(50),
+prior_attainment DECIMAL(3,1),
+target_grade INT,
+final_grade DECIMAL(3,1),
+completion_status VARCHAR(20),
+attendance_pct DECIMAL(5,2),
+late_arrivals_count INT,
+behaviour_incidents INT,
+intervention VARCHAR(50),
+demographic_group VARCHAR(50)
+);
+INSERT INTO college_student_outcomes_sample
+(student_id, course, mode, campus, prior_attainment, target_grade, final_grade, completion_status, attendance_pct, late_arrivals_count, behaviour_incidents, intervention, demographic_group)
+VALUES 
+('S001','BTEC Business','Full-time','Main',5.2,6,6,'Completed',94,2,0,'None','Non-FSM'),
+('S002','BTEC Business','Full-time','Main',4.8,6,5,'Completed',88,5,1,'Tutoring','FSM'),
+('S003','BTEC Business','Part-time','Main',4.5,5, Null,'Withdrawn',62,12,3,'Mentoring','FSM'),
+('S004','A-Level Maths','Full-time','Main',6.5,7,7,'Completed',96,1,0,'None','Non-FSM'),
+('S005','A-Level Maths','Full-time','Main',5.9,7,6,'Completed',91,3,0,'Tutoring','Non-FSM'),
+('S006','A-Level Maths','Part-time','East',5.0,6, Null,'Withdrawn',58,15,4,'None','FSM'),
+('S007','A-Level English','Full-time','Main',5.5,6,6,'Completed',93,2,0,'None','Non-FSM'),
+('S008','A-Level English','Full-time','East',4.7,6,5,'Completed',85,6,2,'Tutoring','FSM'),
+('S009','A-Level English','Part-time','East',4.2,5, Null,'Failed',64,10,3,'Mentoring','SEND'),
+('S010','Access to HE','Part-time','East',3.8,5,5,'Completed',82,7,1,'None','Non-FSM'),
+('S011','Access to HE','Part-time','East',3.5,5, Null,'Withdrawn',55,14,5,'Mentoring','FSM'),
+('S012','Access to HE','Full-time','Main',4.0,5,5,'Completed',89,4,1,'None','FSM'),
+('S013','GCSE Resit Maths','Full-time','Main',2.8,4,4,'Completed',90,3,0,'Tutoring','FSM'),
+('S014','GCSE Resit Maths','Full-time','East',2.5,4,3,'Failed',70,9,2,'None','FSM'),
+('S015','GCSE Resit Maths','Part-time','East',2.6,4, Null,'Withdrawn',48,18,6,'Mentoring','SEND'),
+('S016','BTEC IT','Full-time','Main',5.0,6,6,'Completed',95,2,0,'None','Non-FSM'),
+('S017','BTEC IT','Full-time','Main',4.6,6,5,'Completed',87,5,1,'Tutoring','FSM'),
+('S018','BTEC IT','Part-time','Main',4.3,5, Null,'Withdrawn',60,13,4,'None','FSM'),
+('S019','BTEC Health & Social Care','Full-time','East',4.9,6,6,'Completed',92,3,0,'None','Non-FSM'),
+('S020','BTEC Health & Social Care','Full-time','East',4.4,6,5,'Completed',86,6,1,'Tutoring','FSM'),
+('S021','BTEC Health & Social Care','Part-time','East',4.0,5, Null,'Failed',63,11,3,'Mentoring','SEND'),
+('S022','Foundation Diploma','Full-time','Main',3.9,5,5,'Completed',88,4,1,'None','FSM'),
+('S023','Foundation Diploma','Full-time','Main',3.6,5,4,'Completed',83,7,2,'Tutoring','FSM'),
+('S024','Foundation Diploma','Part-time','East',3.2,5, Null,'Withdrawn',52,16,5,'Mentoring','SEND'),
+('S025','Foundation Diploma','Full-time','East',3.7,5,5,'Completed',90,3,0,'None','Non-FSM');
